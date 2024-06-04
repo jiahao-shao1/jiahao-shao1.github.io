@@ -78,6 +78,54 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="chronodepth_stop()" onmouseover="chronodepth_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='chronodepth_image'><video  width=100% muted autoplay loop>
+                <source src="images/chronodepth.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/chronodepth.jpg' width=100%>
+              </div>
+              <script type="text/javascript">
+                function chronodepth_start() {
+                  document.getElementById('chronodepth_image').style.opacity = "1";
+                }
+      
+                function chronodepth_stop() {
+                  document.getElementById('chronodepth_image').style.opacity = "0";
+                }
+                chronodepth_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://jhaoshao.github.io/ChronoDepth/">
+                <papertitle>Learning Temporally Consistent Video Depth from Video Diffusion Priors</papertitle>
+              </a>
+              <br>
+              <strong> Jiahao Shao </strong>, 
+              <a href="">Yuanbo Yang</a>,
+              <a href="">Hongyu Zhou</a>,
+              <a href="https://youmi-zym.github.io/">Youmin Zhang</a>,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="https://mattpoggi.github.io/">Matteo Poggi</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+              <br>
+              <em>arXiv</em>, 2024
+              <br>
+              <a href="https://jhaoshao.github.io/ChronoDepth/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2406.01493">arXiv</a>
+              /
+              <a href="https://github.com/jhaoshao/ChronoDepth">code</a>
+              <p></p>
+              <p>ChronoDepth studys how to tame a video generative model to predict reliable depth from input videos and achieves not only per-frame accuracy but, more importantly, cross-frame consistency.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
           <tr onmouseout="hugs_stop()" onmouseover="hugs_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -127,7 +175,7 @@
         </tbody></table>
 
 				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Selected Projects</heading>
@@ -148,7 +196,7 @@
               </ul>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
         
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
@@ -159,7 +207,7 @@
                 <li>Outstanding Student Honor (Zhejiang University), 2023</li>
                 <li>The third place of the 11th China University Dragon Boat Champions in dragon boat 200m straight competition and land dragon boat 100m competition (best achievement in team history)</li>
                 <li>The First Prize of the Chinese Famous School Invitation Dragon Boat 200m Straight Competition & the First Place in Land and Water Off-road Competition, 2022 & 2023</li>
-                <li>Two Second-class Scholarships, 2021 & 2022 (Zhejiang University)</li>
+                <li>Two Second-Class Scholarships, 2021 & 2022 (Zhejiang University)</li>
                 <li>Third prize of Zhejiang Advanced Mathematics Competition, 2021</li>
               </ul>
             </td>
@@ -181,7 +229,7 @@
           <tr>
             <td style="padding:0px">
               <br>
-              <p style="text-align:right;font-size:small;">Last updated Mar 2024<br>Thanks <a href="https://jonbarron.info/">Dr. Jon Barron</a> for sharing the source code of his personal page.</p>
+              <p style="text-align:right;font-size:small;">Last updated June 2024<br>Thanks <a href="https://jonbarron.info/">Dr. Jon Barron</a> for sharing the source code of his personal page.</p>
               </p>
             </td>
           </tr>
