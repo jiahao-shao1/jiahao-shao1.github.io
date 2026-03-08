@@ -131,3 +131,55 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.project-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 8px 20px;
+}
+
+.project-card:hover {
+  border-color: #1772d0;
+}
+
+.project-card h3 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.project-card p {
+  margin: 6px 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  font-size: 11px;
+  color: #555;
+  background-color: #e8e8e8;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin: 2px 4px 2px 0;
+}
+
+.status-active {
+  display: inline-block;
+  font-size: 11px;
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 700;
+}
+
+.status-coming {
+  display: inline-block;
+  font-size: 11px;
+  color: #757575;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 700;
+}
