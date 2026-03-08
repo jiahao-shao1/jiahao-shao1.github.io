@@ -1,427 +1,357 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jiahao Shao</title>
-
   <meta name="author" content="Jiahao Shao">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiahao Shao - Researcher in Vision-Language Models and Agentic LLMs">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>➕</text></svg>">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%23D97757' opacity='0.9'/></svg>">
 </head>
 
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Jiahao Shao</name>
-                  </p>
-                  <p>I am a student researcher at X-D Lab advised by <a href="https://yiyiliao.github.io/">Yiyi
-                      Liao</a>. I am also lucky to have collaboration with <a href="https://mattpoggi.github.io/">Matteo
-                      Poggi</a>. Previously I obtained my B.Eng. degree in Automation from <a
-                      href="https://www.zju.edu.cn/english/">Zhejiang University</a> in 2024.
-                  </p>
-                  <p>I am interested in 3D computer vision and generative models.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:jhshao1027@gmail.com">Email</a> &nbsp/&nbsp
-                    <a href="data/Jiahao-CV.pdf">CV (Oct. 24)</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?hl=en&user=On9ZpxcAAAAJ">Scholar</a> &nbsp/&nbsp
-                    <a href="https://twitter.com/jiahaoshao1">Twitter</a> &nbsp/&nbsp
-                    <a href="https://github.com/jiahao-shao1/">Github</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="data/JiahaoShao.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="data/JiahaoShao_Cycle.png" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
-          <hr>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>News</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div style="height:70px;overflow-y:scroll;">
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <ul>
-                    <li>Mar. 2025: Open-sourced my productivity tools: <a href="https://github.com/jiahao-shao1/openclaw-setup">OpenClaw Setup</a> & <a href="https://github.com/jiahao-shao1/notion-lifeos-skill">Notion LifeOS Skill</a>.</li>
-                    <li>Feb. 2025: 🔥🔥 Two papers accepted to <b>CVPR 2025</b>.</li>
-                    <li>Mar. 2024: One paper accepted to <b>CVPR 2024</b>.</li>
-                  </ul>
-        </td>
-      </tr>
-      <!-- One News -->
-      <!-- <tr>
-          <ul>
-            <li>One paper accepted to <b>CVPR2024</b>.</li>
-          </ul>
-          </td>
-        </tr> -->
-    </tbody>
-  </table>
-  </div>
-  <hr>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Research</heading>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-
-      <tr onmouseout="prometheus_stop()" onmouseover="prometheus_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle;">
-          <div class="one">
-            <div class="two" id='prometheus_image'><video width=100% muted autoplay loop>
-                <source src="data/prometheus.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video></div>
-            <img src='data/prometheus.jpg' width=100%>
-          </div>
-          <script type="text/javascript">
-            function prometheus_start() {
-              document.getElementById('prometheus_image').style.opacity = "1";
-            }
-
-            function prometheus_stop() {
-              document.getElementById('prometheus_image').style.opacity = "0";
-            }
-            prometheus_stop()
-          </script>
-        </td>
-        <td width="75%" valign="middle">
-          <a href="https://xdimlab.github.io/ChronoDepth/">
-            <papertitle>Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation
-            </papertitle>
-          </a>
-          <br>
-          <a href="https://freemty.github.io/">Yuanbo Yang*</a>,
-          <strong> Jiahao Shao*</strong>,
-          <a href="https://github.com/imlixinyang/">Xinyang Li</a>,
-          <a href="https://shenyujun.github.io/">Yujun Shen</a>,
-          <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
-          <a href="https://yiyiliao.github.io/">Yiyi Liao†</a>
-          <br>
-          <em>CVPR</em>, 2025
-          <br>
-          <a href="https://freemty.github.io/project-prometheus/">project page</a>
-          /
-          <a href="https://arxiv.org/abs/2412.21117">arXiv</a>
-          /
-          <a href="https://github.com/XDimLab/Prometheus">code</a>
-          <p></p>
-          <p> <strong>Prometheus</strong> introduces a novel method for feed-forward scene-level 3D generation in
-            seconds. Its key idea is to
-            harness the power of pre-trained 2D priors to enable generalizable and efficient 3D synthesis - hence its
-            name, Prometheus.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-
-      <tr onmouseout="chronodepth_stop()" onmouseover="chronodepth_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='chronodepth_image'><video width=100% muted autoplay loop>
-                <source src="data/chronodepth.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video></div>
-            <img src='data/chronodepth.jpg' width=100%>
-          </div>
-          <script type="text/javascript">
-            function chronodepth_start() {
-              document.getElementById('chronodepth_image').style.opacity = "1";
-            }
-
-            function chronodepth_stop() {
-              document.getElementById('chronodepth_image').style.opacity = "0";
-            }
-            chronodepth_stop()
-          </script>
-        </td>
-        <td width="75%" valign="middle">
-          <a href="https://xdimlab.github.io/ChronoDepth/">
-            <papertitle>Learning Temporally Consistent Video Depth from Video Diffusion Priors</papertitle>
-          </a>
-          <br>
-          <strong> Jiahao Shao*</strong>,
-          <a href="">Yuanbo Yang*</a>,
-          <a href="">Hongyu Zhou</a>,
-          <a href="https://youmi-zym.github.io/">Youmin Zhang</a>,
-          <a href="https://shenyujun.github.io/">Yujun Shen</a>,
-          <a href="https://vitorguizilini.github.io/">Vitor Guizilini</a>,
-          <a href="https://yuewang.xyz/">Yue Wang</a>,
-          <a href="https://mattpoggi.github.io/">Matteo Poggi</a>,
-          <a href="https://yiyiliao.github.io/">Yiyi Liao†</a>
-          <br>
-          <em>CVPR</em>, 2025
-          <br>
-          <a href="https://xdimlab.github.io/ChronoDepth/">project page</a>
-          /
-          <a href="https://arxiv.org/abs/2406.01493">arXiv</a>
-          /
-          <a href="https://github.com/jiahao-shao1/ChronoDepth">code</a>
-          <p></p>
-          <p><strong>ChronoDepth</strong> addresses the challenge of streamed video depth estimation with video
-            diffusion model.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-
-      <tr onmouseout="hugs_stop()" onmouseover="hugs_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='hugs_image'><video width=100% muted autoplay loop>
-                <source src="data/hugs.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video></div>
-            <img src='data/hugs.jpg' width=100%>
-          </div>
-          <script type="text/javascript">
-            function hugs_start() {
-              document.getElementById('hugs_image').style.opacity = "1";
-            }
-
-            function hugs_stop() {
-              document.getElementById('hugs_image').style.opacity = "0";
-            }
-            hugs_stop()
-          </script>
-        </td>
-        <td width="75%" valign="middle">
-          <a href="https://xdimlab.github.io/hugs_website/">
-            <papertitle>HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting</papertitle>
-          </a>
-          <br>
-          <a href="">Hongyu Zhou</a>,
-          <strong>Jiahao Shao</strong>,
-          <a href="">Lu Xu</a>,
-          <a href="">Dongfeng Bai</a>,
-          <a href="https://weichaoqiu.com/">Weichao Qiu</a>,
-          <a href="">Bingbing Liu</a>,
-          <a href="https://ywang-zju.github.io/">Yue Wang</a>,
-          <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
-          <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
-          <br>
-          <em>CVPR</em>, 2024
-          <br>
-          <a href="https://xdimlab.github.io/hugs_website/">project page</a>
-          /
-          <a href="http://arxiv.org/abs/2403.12722">arXiv</a>
-          /
-          <a href="https://github.com/hyzhou404/HUGS">code</a>
-          <p></p>
-          <p><strong>HUGS</strong> utilizes 3D Gaussian Splatting for holistic urban scene understanding with only posed
-            RGB image as input. The model extend 3D Gaussian Splatting to model camera exposure, optical flow, semantics
-            and dynamic objects for holistic understanding while it could achieve real-time rendering at 100 fps.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Selected Honors and Awards</heading>
-              <ul>
-                <li>Finalist Award of Mathematical Contest in Modeling (top 2%), 2023</li>
-                <li>Outstanding Student Honor (Zhejiang University), 2023</li>
-                <li>Two Second-Class Scholarships, 2021 & 2022 (Zhejiang University)</li>
-                <li>Third prize of Zhejiang Advanced Mathematics Competition, 2021</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table> -->
-
-  <hr>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Open Source Projects</heading>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td>
-          <div class="project-card">
-            <h3>
-              <a href="https://github.com/jiahao-shao1/openclaw-setup">OpenClaw Setup</a>
-              <span class="status-active">Active</span>
-            </h3>
-            <p>A personal configuration template for OpenClaw, an AI-powered automation system for eliminating repetitive digital work.</p>
-            <div>
-              <span class="tech-tag">OpenClaw</span>
-              <span class="tech-tag">Automation</span>
-              <span class="tech-tag">AI Agent</span>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="project-card">
-            <h3>
-              <a href="https://github.com/jiahao-shao1/notion-lifeos-skill">Notion LifeOS Skill</a>
-              <span class="status-active">Active</span>
-            </h3>
-            <p>An AI-agent-compatible skill that transforms Notion into a personal knowledge management and life organization system using the PARA method.</p>
-            <div>
-              <span class="tech-tag">Notion</span>
-              <span class="tech-tag">PARA</span>
-              <span class="tech-tag">Claude Code</span>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="project-card">
-            <h3>
-              Claude Code Config
-              <span class="status-coming">Coming Soon</span>
-            </h3>
-            <p>My personal Claude Code configuration, skills, and workflow setup for AI-assisted software development.</p>
-            <div>
-              <span class="tech-tag">Claude Code</span>
-              <span class="tech-tag">AI Development</span>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Experiences</heading>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:20%;vertical-align:middle">
-          <img src='data/logo/padded_ant.png' width=80% style="display: block; margin: auto;">
-        </td>
-        <td width="75%" valign="middle">
-          <br>
-          <strong>Ant Group</strong>
-          <br>
-          Apr. 2024 - Present
-          <br>
-          Research Intern
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:20%;vertical-align:middle">
-          <img src='data/logo/padded_zju.png' width=80%, style="display: block; margin: auto;">
-        </td>
-        <td width="75%" valign="middle">
-          <br>
-          <strong>Zhejiang University</strong>,
-          <br>
-          Sep. 2020 - Jul. 2024
-          <br>
-          Bachelor Degree
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody>
-      <tr>
-        <td>
-          <heading>Misc.</heading>
-          <ul>
-            <li>I enjoy various kinds of sports, including basketball, fitness, and water sports. I was a varsity
-              athlete and the team leader on ZJU's Dragon Boat Team. I am also a fan of <a
-                href="https://www.nba.com/">NBA</a>.</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:0px">
-          <br>
-          <p style="text-align:right;font-size:small;">Last updated Mar. 2025<br>Thanks <a
-              href="https://jonbarron.info/">Dr. Jon Barron</a> for sharing the source code of his personal page.</p>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table>
-    <div style="width:20%;margin:0 auto;">
-      <script type="text/javascript" id="clstr_globe"
-        src="//clustrmaps.com/globe.js?d=aeAvHz-b79mC7dPRO9kLzIprAAipupSBWJPwByyZKfQ"></script>
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-name" href="#">Jiahao Shao</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="mailto:jhshao1027@gmail.com">Contact</a>
+      </div>
     </div>
-  </table>
+  </nav>
 
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-enter delay-1">Jiahao Shao <span style="font-size:0.6em; font-weight:300; color:var(--text-secondary); letter-spacing:0.02em;">邵嘉豪</span></h1>
+          <p class="hero-tagline hero-enter delay-2">Researcher in Vision-Language Models &amp; Agentic LLMs</p>
+          <p class="hero-bio hero-enter delay-3">
+            I am a student researcher at X-D Lab advised by <a href="https://yiyiliao.github.io/">Yiyi Liao</a>.
+            I am also lucky to have collaboration with <a href="https://mattpoggi.github.io/">Matteo Poggi</a>.
+            Previously I obtained my B.Eng. degree in Automation from
+            <a href="https://www.zju.edu.cn/english/">Zhejiang University</a> in 2024.
+          </p>
+          <div class="hero-links hero-enter delay-4">
+            <a href="mailto:jhshao1027@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email
+            </a>
+            <a href="data/Jiahao-CV.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              CV
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=On9ZpxcAAAAJ">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+              Scholar
+            </a>
+            <a href="https://twitter.com/jiahaoshao1">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter
+            </a>
+            <a href="https://github.com/jiahao-shao1/">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo hero-enter delay-5">
+          <a href="data/JiahaoShao.jpg">
+            <img src="data/JiahaoShao_Cycle.png" alt="Jiahao Shao">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </td>
-  </tr>
-  </table>
+  <!-- ===== NEWS ===== -->
+  <div class="news-section">
+    <div class="container">
+      <div class="news-list">
+        <div class="news-item fade-up">
+          <span class="news-date">Mar 2025</span>
+          <span class="news-text">Open-sourced my productivity tools: <a href="https://github.com/jiahao-shao1/openclaw-setup">OpenClaw Setup</a> &amp; <a href="https://github.com/jiahao-shao1/notion-lifeos-skill">Notion LifeOS Skill</a>.</span>
+        </div>
+        <div class="news-item fade-up stagger-1">
+          <span class="news-date">Feb 2025</span>
+          <span class="news-text">Two papers accepted to <b>CVPR 2025</b>.</span>
+        </div>
+        <div class="news-item fade-up stagger-2">
+          <span class="news-date">Mar 2024</span>
+          <span class="news-text">One paper accepted to <b>CVPR 2024</b>.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RESEARCH ===== -->
+  <section id="research">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Research</h2>
+      </div>
+
+      <div class="papers">
+        <!-- Prometheus -->
+        <article class="paper-card fade-up">
+          <div class="paper-media">
+            <img src="data/prometheus.jpg" alt="Prometheus">
+            <video muted autoplay loop playsinline>
+              <source src="data/prometheus.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <a class="paper-title" href="https://freemty.github.io/project-prometheus/">
+              Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation
+            </a>
+            <p class="paper-authors">
+              <a href="https://freemty.github.io/">Yuanbo Yang*</a>,
+              <span class="me">Jiahao Shao*</span>,
+              <a href="https://github.com/imlixinyang/">Xinyang Li</a>,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">CVPR 2025</p>
+            <div class="paper-links">
+              <a href="https://freemty.github.io/project-prometheus/">Project</a>
+              <a href="https://arxiv.org/abs/2412.21117">arXiv</a>
+              <a href="https://github.com/XDimLab/Prometheus">Code</a>
+            </div>
+            <p class="paper-desc">
+              <strong>Prometheus</strong> introduces a novel method for feed-forward scene-level 3D generation in seconds, harnessing pre-trained 2D priors for generalizable and efficient 3D synthesis.
+            </p>
+          </div>
+        </article>
+
+        <!-- ChronoDepth -->
+        <article class="paper-card fade-up">
+          <div class="paper-media">
+            <img src="data/chronodepth.jpg" alt="ChronoDepth">
+            <video muted autoplay loop playsinline>
+              <source src="data/chronodepth.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <a class="paper-title" href="https://xdimlab.github.io/ChronoDepth/">
+              Learning Temporally Consistent Video Depth from Video Diffusion Priors
+            </a>
+            <p class="paper-authors">
+              <span class="me">Jiahao Shao*</span>,
+              Yuanbo Yang*,
+              Hongyu Zhou,
+              <a href="https://youmi-zym.github.io/">Youmin Zhang</a>,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="https://vitorguizilini.github.io/">Vitor Guizilini</a>,
+              <a href="https://yuewang.xyz/">Yue Wang</a>,
+              <a href="https://mattpoggi.github.io/">Matteo Poggi</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">CVPR 2025</p>
+            <div class="paper-links">
+              <a href="https://xdimlab.github.io/ChronoDepth/">Project</a>
+              <a href="https://arxiv.org/abs/2406.01493">arXiv</a>
+              <a href="https://github.com/jiahao-shao1/ChronoDepth">Code</a>
+            </div>
+            <p class="paper-desc">
+              <strong>ChronoDepth</strong> addresses the challenge of temporally consistent video depth estimation using video diffusion model priors.
+            </p>
+          </div>
+        </article>
+
+        <!-- HUGS -->
+        <article class="paper-card fade-up">
+          <div class="paper-media">
+            <img src="data/hugs.jpg" alt="HUGS">
+            <video muted autoplay loop playsinline>
+              <source src="data/hugs.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <a class="paper-title" href="https://xdimlab.github.io/hugs_website/">
+              HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting
+            </a>
+            <p class="paper-authors">
+              Hongyu Zhou,
+              <span class="me">Jiahao Shao</span>,
+              Lu Xu,
+              Dongfeng Bai,
+              <a href="https://weichaoqiu.com/">Weichao Qiu</a>,
+              Bingbing Liu,
+              <a href="https://ywang-zju.github.io/">Yue Wang</a>,
+              <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">CVPR 2024</p>
+            <div class="paper-links">
+              <a href="https://xdimlab.github.io/hugs_website/">Project</a>
+              <a href="http://arxiv.org/abs/2403.12722">arXiv</a>
+              <a href="https://github.com/hyzhou404/HUGS">Code</a>
+            </div>
+            <p class="paper-desc">
+              <strong>HUGS</strong> utilizes 3D Gaussian Splatting for holistic urban scene understanding with only posed RGB images, achieving real-time rendering at 100 fps while modeling exposure, optical flow, semantics, and dynamic objects.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPEN SOURCE ===== -->
+  <section id="projects" style="border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Open Source</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="proj-card fade-up stagger-1">
+          <h3><a href="https://github.com/jiahao-shao1/openclaw-setup">OpenClaw Setup</a></h3>
+          <span class="proj-status active">Active</span>
+          <p class="proj-desc">A personal configuration template for OpenClaw, an AI-powered automation system for eliminating repetitive digital work.</p>
+          <div class="proj-tags">
+            <span>OpenClaw</span>
+            <span>Automation</span>
+            <span>AI Agent</span>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up stagger-2">
+          <h3><a href="https://github.com/jiahao-shao1/notion-lifeos-skill">Notion LifeOS Skill</a></h3>
+          <span class="proj-status active">Active</span>
+          <p class="proj-desc">An AI-agent-compatible skill that transforms Notion into a personal knowledge management system using the PARA method.</p>
+          <div class="proj-tags">
+            <span>Notion</span>
+            <span>PARA</span>
+            <span>Claude Code</span>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up stagger-3">
+          <h3>Claude Code Config</h3>
+          <span class="proj-status coming">Coming Soon</span>
+          <p class="proj-desc">My personal Claude Code configuration, skills, and workflow setup for AI-assisted software development.</p>
+          <div class="proj-tags">
+            <span>Claude Code</span>
+            <span>AI Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" style="border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-item-header">
+            <img class="timeline-logo" src="data/logo/padded_ant.png" alt="Ant Group">
+            <div class="timeline-info">
+              <h3>Ant Group</h3>
+              <div class="timeline-role">Research Intern</div>
+              <div class="timeline-period">Apr. 2024 &mdash; Present</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up stagger-1">
+          <div class="timeline-item-header">
+            <img class="timeline-logo" src="data/logo/padded_zju.png" alt="Zhejiang University">
+            <div class="timeline-info">
+              <h3>Zhejiang University</h3>
+              <div class="timeline-role">B.Eng. in Automation</div>
+              <div class="timeline-period">Sep. 2020 &mdash; Jul. 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISC ===== -->
+  <section style="border-top: 1px solid var(--border); padding-bottom: 40px;">
+    <div class="container">
+      <div class="section-header fade-up">
+        <h2>Misc.</h2>
+      </div>
+      <div class="misc-content fade-up">
+        I enjoy various kinds of sports, including basketball, fitness, and water sports.
+        I was a varsity athlete and the team leader on ZJU's Dragon Boat Team.
+        I am also a fan of the <a href="https://www.nba.com/">NBA</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Last updated Mar. 2025</p>
+      <div class="globe-container">
+        <script type="text/javascript" id="clstr_globe"
+          src="//clustrmaps.com/globe.js?d=aeAvHz-b79mC7dPRO9kLzIprAAipupSBWJPwByyZKfQ"></script>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Scroll-triggered animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.fade-up, .section-header').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          const navHeight = nav.offsetHeight;
+          const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
