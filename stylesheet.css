@@ -444,7 +444,7 @@ a.paper-title:hover {
   font-family: var(--font-display);
   font-size: 14px;
   font-style: italic;
-  color: var(--accent);
+  color: var(--text);
   margin-bottom: 10px;
 }
 
@@ -458,11 +458,11 @@ a.paper-title:hover {
 .paper-links a {
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--accent);
 }
 
 .paper-links a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 /* ===== PROJECTS ===== */
@@ -570,6 +570,12 @@ a.paper-title:hover {
   font-size: 13.5px;
   color: var(--text-secondary);
   margin-top: 2px;
+}
+
+.timeline-advisor {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 1px;
 }
 
 .timeline-period {
