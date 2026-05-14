@@ -245,29 +245,29 @@ section {
 .news-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0;
 }
 
 .news-item {
   display: flex;
   align-items: baseline;
   gap: 32px;
-  padding: 4px 0;
+  padding: 1px 0;
 }
 
 .news-date {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--text-secondary);
   white-space: nowrap;
-  min-width: 90px;
+  min-width: 80px;
   letter-spacing: 0;
 }
 
 .news-text {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.4;
 }
 
 .news-text b {
