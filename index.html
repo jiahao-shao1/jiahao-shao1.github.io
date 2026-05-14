@@ -8,10 +8,10 @@
   <meta name="author" content="Jiahao Shao">
   <meta name="description" content="Jiahao Shao - Researcher in Vision-Language Models and Agentic LLMs">
 
-  <!-- Fonts -->
+  <!-- Fonts: Inter (free Messina Sans substitute) + Zen Old Mincho (for Chinese name) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Zen+Old+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>➕</text></svg>">
@@ -19,25 +19,30 @@
 
 <body>
 
-  <!-- ===== NAV ===== -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="nav-name" href="#">Jiahao Shao</a>
-      <div class="nav-links">
+  <!-- ===== STICKY HEADER (name + inline nav) ===== -->
+  <header class="hero-header">
+    <div class="container">
+      <div class="hero-info">
+        <h1>Jiahao Shao <span class="cn-name">邵嘉豪</span></h1>
+        <p class="subtitle">Ph.D, HKUST CSE</p>
+      </div>
+      <nav class="nav-sections">
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="mailto:jhshao1027@gmail.com">Contact</a>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- ===== HERO (greeting + intro) ===== -->
   <section class="hero">
     <div class="container">
+
+      <h2 class="greeting">Hi, I'm Jiahao!</h2>
+
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Jiahao Shao <span style="font-size:0.6em; font-weight:300; color:var(--text-secondary); letter-spacing:0.02em;">邵嘉豪</span></h1>
           <p class="hero-bio">
             I am a Ph.D. student in Computer Science at
             <a href="https://hkust.edu.hk/">HKUST</a>,
@@ -78,28 +83,32 @@
           <img src="data/avatar.jpg" alt="Jiahao Shao">
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ===== NEWS ===== -->
-  <div class="news-section">
+  <section id="news" class="news-section">
     <div class="container">
+      <div class="section-header">
+        <h2>Recent News</h2>
+      </div>
       <div class="news-list">
         <div class="news-item">
-          <span class="news-date">Mar 2025</span>
+          <span class="news-date">2025. 03:</span>
           <span class="news-text">Open-sourced <a href="https://github.com/jiahao-shao1/sjh-skills">sjh-skills</a>.</span>
         </div>
         <div class="news-item">
-          <span class="news-date">Feb 2025</span>
+          <span class="news-date">2025. 02:</span>
           <span class="news-text">Two papers accepted to <b>CVPR 2025</b>.</span>
         </div>
         <div class="news-item">
-          <span class="news-date">Mar 2024</span>
+          <span class="news-date">2024. 03:</span>
           <span class="news-text">One paper accepted to <b>CVPR 2024</b>.</span>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ===== RESEARCH ===== -->
   <section id="research">
@@ -355,7 +364,7 @@
   </section>
 
   <!-- ===== OPEN SOURCE ===== -->
-  <section id="projects" style="border-top: 1px solid var(--border);">
+  <section id="projects">
     <div class="container">
       <div class="section-header">
         <h2>Open Source</h2>
@@ -377,7 +386,7 @@
   </section>
 
   <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" style="border-top: 1px solid var(--border);">
+  <section id="experience">
     <div class="container">
       <div class="section-header">
         <h2>Experience</h2>
@@ -432,7 +441,7 @@
   </section>
 
   <!-- ===== AWARDS ===== -->
-  <section style="border-top: 1px solid var(--border);">
+  <section>
     <div class="container">
       <div class="section-header">
         <h2>Awards</h2>
@@ -451,7 +460,7 @@
   </section>
 
   <!-- ===== MISC ===== -->
-  <section style="border-top: 1px solid var(--border); padding-bottom: 40px;">
+  <section>
     <div class="container">
       <div class="section-header">
         <h2>Misc.</h2>
@@ -472,11 +481,6 @@
   </footer>
 
   <script>
-    const nav = document.getElementById('nav');
-    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
     document.querySelectorAll('.pub-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         const tab = btn.dataset.tab;
@@ -485,13 +489,14 @@
       });
     });
 
-    document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+    document.querySelectorAll('.nav-sections a[href^="#"]').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
         const target = document.querySelector(link.getAttribute('href'));
         if (target) {
-          const navHeight = nav.offsetHeight;
-          const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+          const header = document.querySelector('.hero-header');
+          const headerH = header ? header.offsetHeight : 0;
+          const targetPos = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
           window.scrollTo({ top: targetPos, behavior: 'smooth' });
         }
       });
