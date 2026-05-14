@@ -1,17 +1,17 @@
 /* ===== VARIABLES ===== */
 :root {
-  --bg: #FAF7F2;
-  --bg-elevated: #F0EAE0;
+  --bg: #FFFFFF;
+  --bg-elevated: #FFFFFF;
   --bg-card: #FFFFFF;
-  --text: #1B1B1E;
-  --text-secondary: #6B665E;
-  --text-tertiary: #9E988F;
-  --accent: #D97757;
-  --accent-hover: #C4613E;
-  --accent-subtle: rgba(217, 119, 87, 0.07);
-  --accent-light: rgba(217, 119, 87, 0.14);
-  --border: #E8E2D9;
-  --border-light: #F0EAE1;
+  --text: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.62);
+  --text-tertiary: rgba(0, 0, 0, 0.42);
+  --accent: #1F4ED8;
+  --accent-hover: #1640C0;
+  --accent-subtle: rgba(31, 78, 216, 0.06);
+  --accent-light: rgba(31, 78, 216, 0.14);
+  --border: rgba(0, 0, 0, 0.12);
+  --border-light: rgba(0, 0, 0, 0.07);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 14px;
@@ -79,7 +79,7 @@ section {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(250, 247, 242, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(180%) blur(12px);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid transparent;
