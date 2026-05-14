@@ -544,9 +544,9 @@ a.paper-title:hover {
 
 /* ===== EXPERIENCE ===== */
 .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 40px;
 }
 
 .timeline-item-header {
@@ -558,25 +558,8 @@ a.paper-title:hover {
 .timeline-logo {
   width: 46px;
   height: 46px;
-  border-radius: var(--radius-sm);
   object-fit: contain;
-  background: white;
-  padding: 5px;
-  border: 1px solid var(--border-light);
   flex-shrink: 0;
-}
-
-.timeline-logo-mono {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  letter-spacing: 0.06em;
-  background: var(--bg-elevated);
-  padding: 0;
 }
 
 .timeline-info h3 {
@@ -597,6 +580,10 @@ a.paper-title:hover {
   font-size: 13px;
   color: var(--text-tertiary);
   margin-top: 1px;
+}
+
+@media (max-width: 600px) {
+  .timeline { grid-template-columns: 1fr; }
 }
 
 /* ===== AWARDS ===== */
