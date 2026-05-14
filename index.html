@@ -37,15 +37,22 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-enter delay-1">Jiahao Shao <span style="font-size:0.6em; font-weight:300; color:var(--text-secondary); letter-spacing:0.02em;">邵嘉豪</span></h1>
-          <p class="hero-tagline hero-enter delay-2">Researcher in Vision-Language Models &amp; Agentic LLMs</p>
-          <p class="hero-bio hero-enter delay-3">
-            I am a student researcher at X-D Lab advised by <a href="https://yiyiliao.github.io/">Yiyi Liao</a>.
-            I am also lucky to have collaboration with <a href="https://mattpoggi.github.io/">Matteo Poggi</a>.
-            Previously I obtained my B.Eng. degree in Automation from
-            <a href="https://www.zju.edu.cn/english/">Zhejiang University</a> in 2024.
+          <h1>Jiahao Shao <span style="font-size:0.6em; font-weight:300; color:var(--text-secondary); letter-spacing:0.02em;">邵嘉豪</span></h1>
+          <p class="hero-tagline">Ph.D. student at HKUST, working on world models</p>
+          <p class="hero-bio">
+            I am a Ph.D. student in Computer Science at
+            <a href="https://hkust.edu.hk/">HKUST</a>,
+            advised by <a href="https://justimyhxu.github.io/">Yinghao Xu</a>.
+            Previously I obtained my B.Eng. in Automation from
+            <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>,
+            where I worked with <a href="https://yiyiliao.github.io/">Yiyi Liao</a> at X-D Lab.
           </p>
-          <div class="hero-links hero-enter delay-4">
+          <p class="hero-bio">
+            My research aims to build a general-purpose <b>world model</b> that can understand,
+            simulate, and interact with the physical world &mdash; at the intersection of
+            computer vision, generative modeling, and embodied AI.
+          </p>
+          <div class="hero-links">
             <a href="mailto:jhshao1027@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               Email
@@ -68,7 +75,7 @@
             </a>
           </div>
         </div>
-        <div class="hero-photo hero-enter delay-5">
+        <div class="hero-photo">
           <a href="data/JiahaoShao.jpg">
             <img src="data/JiahaoShao_Cycle.png" alt="Jiahao Shao">
           </a>
@@ -81,15 +88,15 @@
   <div class="news-section">
     <div class="container">
       <div class="news-list">
-        <div class="news-item fade-up">
+        <div class="news-item">
           <span class="news-date">Mar 2025</span>
-          <span class="news-text">Open-sourced my productivity tools: <a href="https://github.com/jiahao-shao1/openclaw-setup">OpenClaw Setup</a> &amp; <a href="https://github.com/jiahao-shao1/notion-lifeos-skill">Notion LifeOS Skill</a>.</span>
+          <span class="news-text">Open-sourced <a href="https://github.com/jiahao-shao1/sjh-skills">sjh-skills</a>.</span>
         </div>
-        <div class="news-item fade-up stagger-1">
+        <div class="news-item">
           <span class="news-date">Feb 2025</span>
           <span class="news-text">Two papers accepted to <b>CVPR 2025</b>.</span>
         </div>
-        <div class="news-item fade-up stagger-2">
+        <div class="news-item">
           <span class="news-date">Mar 2024</span>
           <span class="news-text">One paper accepted to <b>CVPR 2024</b>.</span>
         </div>
@@ -100,13 +107,41 @@
   <!-- ===== RESEARCH ===== -->
   <section id="research">
     <div class="container">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <h2>Research</h2>
       </div>
 
+      <div class="pub-tabs">
+        <button class="pub-tab is-active" data-tab="selected">Selected</button>
+        <button class="pub-tab" data-tab="full">Full Publications</button>
+      </div>
+
+      <div class="pub-panel" data-panel="selected">
       <div class="papers">
+        <!-- ReRoPE -->
+        <article class="paper-card">
+          <div class="paper-media">
+            <img src="data/rerope.png" alt="ReRoPE">
+            <video muted autoplay loop playsinline>
+              <source src="data/rerope.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <span class="paper-title">ReRoPE: Repurposing RoPE for Relative Camera Control</span>
+            <p class="paper-authors">
+              Chunyang Li*,
+              <a href="https://freemty.github.io/">Yuanbo Yang*</a>,
+              <span class="me">Jiahao Shao*</span>,
+              Hongyu Zhou,
+              Katja Schwarz,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">SIGGRAPH 2026</p>
+          </div>
+        </article>
+
         <!-- Prometheus -->
-        <article class="paper-card fade-up">
+        <article class="paper-card">
           <div class="paper-media">
             <img src="data/prometheus.jpg" alt="Prometheus">
             <video muted autoplay loop playsinline>
@@ -131,14 +166,11 @@
               <a href="https://arxiv.org/abs/2412.21117">arXiv</a>
               <a href="https://github.com/XDimLab/Prometheus">Code</a>
             </div>
-            <p class="paper-desc">
-              <strong>Prometheus</strong> introduces a novel method for feed-forward scene-level 3D generation in seconds, harnessing pre-trained 2D priors for generalizable and efficient 3D synthesis.
-            </p>
           </div>
         </article>
 
         <!-- ChronoDepth -->
-        <article class="paper-card fade-up">
+        <article class="paper-card">
           <div class="paper-media">
             <img src="data/chronodepth.jpg" alt="ChronoDepth">
             <video muted autoplay loop playsinline>
@@ -166,14 +198,131 @@
               <a href="https://arxiv.org/abs/2406.01493">arXiv</a>
               <a href="https://github.com/jiahao-shao1/ChronoDepth">Code</a>
             </div>
-            <p class="paper-desc">
-              <strong>ChronoDepth</strong> addresses the challenge of temporally consistent video depth estimation using video diffusion model priors.
-            </p>
           </div>
         </article>
 
-        <!-- HUGS -->
-        <article class="paper-card fade-up">
+      </div>
+      </div>
+
+      <div class="pub-panel" data-panel="full" hidden>
+      <div class="papers">
+        <article class="paper-card">
+          <div class="paper-media">
+            <img src="data/scendi.png" alt="ScenDi">
+          </div>
+          <div class="paper-info">
+            <span class="paper-title">ScenDi: 3D-to-2D Scene Diffusion Cascades for Urban Generation</span>
+            <p class="paper-authors">
+              Hanlei Guo,
+              <span class="me">Jiahao Shao</span>,
+              Xinya Chen,
+              Xiyang Tan,
+              Sheng Miao,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">CVPR 2026</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="paper-media">
+            <img src="data/rerope.png" alt="ReRoPE">
+            <video muted autoplay loop playsinline>
+              <source src="data/rerope.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <span class="paper-title">ReRoPE: Repurposing RoPE for Relative Camera Control</span>
+            <p class="paper-authors">
+              Chunyang Li*,
+              <a href="https://freemty.github.io/">Yuanbo Yang*</a>,
+              <span class="me">Jiahao Shao*</span>,
+              Hongyu Zhou,
+              Katja Schwarz,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">SIGGRAPH 2026</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="paper-media">
+            <img src="data/depth-foundation.jpg" alt="Towards Depth Foundation Model">
+          </div>
+          <div class="paper-info">
+            <span class="paper-title">Towards Depth Foundation Model: Recent Trends in Vision-Based Depth Estimation</span>
+            <p class="paper-authors">
+              Zhen Xu*, Hongyu Zhou*, Sida Peng, Haotong Lin, Haoyu Guo,
+              <span class="me">Jiahao Shao</span>,
+              Peishan Yang, Qinglin Yang, Sheng Miao, Xingyi He, Yifan Wang, Yue Wang, Ruizhen Hu,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>,
+              Xiaowei Zhou, Hujun Bao
+            </p>
+            <p class="paper-venue">Computational Visual Media, 2026</p>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="paper-media">
+            <img src="data/prometheus.jpg" alt="Prometheus">
+            <video muted autoplay loop playsinline>
+              <source src="data/prometheus.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <a class="paper-title" href="https://freemty.github.io/project-prometheus/">
+              Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation
+            </a>
+            <p class="paper-authors">
+              <a href="https://freemty.github.io/">Yuanbo Yang*</a>,
+              <span class="me">Jiahao Shao*</span>,
+              <a href="https://github.com/imlixinyang/">Xinyang Li</a>,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">CVPR 2025</p>
+            <div class="paper-links">
+              <a href="https://freemty.github.io/project-prometheus/">Project</a>
+              <a href="https://arxiv.org/abs/2412.21117">arXiv</a>
+              <a href="https://github.com/XDimLab/Prometheus">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <div class="paper-media">
+            <img src="data/chronodepth.jpg" alt="ChronoDepth">
+            <video muted autoplay loop playsinline>
+              <source src="data/chronodepth.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="paper-info">
+            <a class="paper-title" href="https://xdimlab.github.io/ChronoDepth/">
+              Learning Temporally Consistent Video Depth from Video Diffusion Priors
+            </a>
+            <p class="paper-authors">
+              <span class="me">Jiahao Shao*</span>,
+              Yuanbo Yang*,
+              Hongyu Zhou,
+              <a href="https://youmi-zym.github.io/">Youmin Zhang</a>,
+              <a href="https://shenyujun.github.io/">Yujun Shen</a>,
+              <a href="https://vitorguizilini.github.io/">Vitor Guizilini</a>,
+              <a href="https://yuewang.xyz/">Yue Wang</a>,
+              <a href="https://mattpoggi.github.io/">Matteo Poggi</a>,
+              <a href="https://yiyiliao.github.io/">Yiyi Liao</a>
+            </p>
+            <p class="paper-venue">CVPR 2025</p>
+            <div class="paper-links">
+              <a href="https://xdimlab.github.io/ChronoDepth/">Project</a>
+              <a href="https://arxiv.org/abs/2406.01493">arXiv</a>
+              <a href="https://github.com/jiahao-shao1/ChronoDepth">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card">
           <div class="paper-media">
             <img src="data/hugs.jpg" alt="HUGS">
             <video muted autoplay loop playsinline>
@@ -201,11 +350,9 @@
               <a href="http://arxiv.org/abs/2403.12722">arXiv</a>
               <a href="https://github.com/hyzhou404/HUGS">Code</a>
             </div>
-            <p class="paper-desc">
-              <strong>HUGS</strong> utilizes 3D Gaussian Splatting for holistic urban scene understanding with only posed RGB images, achieving real-time rendering at 100 fps while modeling exposure, optical flow, semantics, and dynamic objects.
-            </p>
           </div>
         </article>
+      </div>
       </div>
     </div>
   </section>
@@ -213,40 +360,19 @@
   <!-- ===== OPEN SOURCE ===== -->
   <section id="projects" style="border-top: 1px solid var(--border);">
     <div class="container">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <h2>Open Source</h2>
       </div>
 
       <div class="projects-grid">
-        <div class="proj-card fade-up stagger-1">
-          <h3><a href="https://github.com/jiahao-shao1/openclaw-setup">OpenClaw Setup</a></h3>
+        <div class="proj-card">
+          <h3><a href="https://github.com/jiahao-shao1/sjh-skills">sjh-skills</a></h3>
           <span class="proj-status active">Active</span>
-          <p class="proj-desc">A personal configuration template for OpenClaw, an AI-powered automation system for eliminating repetitive digital work.</p>
+          <p class="proj-desc">A monorepo of personal Claude Code skills covering research, productivity, and remote cluster workflows.</p>
           <div class="proj-tags">
-            <span>OpenClaw</span>
-            <span>Automation</span>
+            <span>Claude Code</span>
+            <span>Skills</span>
             <span>AI Agent</span>
-          </div>
-        </div>
-
-        <div class="proj-card fade-up stagger-2">
-          <h3><a href="https://github.com/jiahao-shao1/notion-lifeos-skill">Notion LifeOS Skill</a></h3>
-          <span class="proj-status active">Active</span>
-          <p class="proj-desc">An AI-agent-compatible skill that transforms Notion into a personal knowledge management system using the PARA method.</p>
-          <div class="proj-tags">
-            <span>Notion</span>
-            <span>PARA</span>
-            <span>Claude Code</span>
-          </div>
-        </div>
-
-        <div class="proj-card fade-up stagger-3">
-          <h3>Claude Code Config</h3>
-          <span class="proj-status coming">Coming Soon</span>
-          <p class="proj-desc">My personal Claude Code configuration, skills, and workflow setup for AI-assisted software development.</p>
-          <div class="proj-tags">
-            <span>Claude Code</span>
-            <span>AI Development</span>
           </div>
         </div>
       </div>
@@ -256,31 +382,72 @@
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" style="border-top: 1px solid var(--border);">
     <div class="container">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <h2>Experience</h2>
       </div>
 
       <div class="timeline">
-        <div class="timeline-item fade-up">
+        <div class="timeline-item">
           <div class="timeline-item-header">
-            <img class="timeline-logo" src="data/logo/padded_ant.png" alt="Ant Group">
+            <div class="timeline-logo timeline-logo-mono">HKUST</div>
             <div class="timeline-info">
-              <h3>Ant Group</h3>
-              <div class="timeline-role">Research Intern</div>
-              <div class="timeline-period">Apr. 2024 &mdash; Present</div>
+              <h3>HKUST</h3>
+              <div class="timeline-role">Ph.D. in Computer Science &middot; advised by <a href="https://justimyhxu.github.io/">Yinghao Xu</a></div>
+              <div class="timeline-period">2026 &mdash; Present</div>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item fade-up stagger-1">
+        <div class="timeline-item">
+          <div class="timeline-item-header">
+            <img class="timeline-logo" src="data/logo/padded_ant.png" alt="Ant Group">
+            <div class="timeline-info">
+              <h3>Ant Group</h3>
+              <div class="timeline-role">Research Intern &middot; with <a href="https://shenyujun.github.io/">Yujun Shen</a></div>
+              <div class="timeline-period">2024 &mdash; 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item-header">
+            <img class="timeline-logo" src="data/logo/padded_zju.png" alt="Zhejiang University">
+            <div class="timeline-info">
+              <h3>Zhejiang University</h3>
+              <div class="timeline-role">Research Assistant &middot; with <a href="https://yiyiliao.github.io/">Yiyi Liao</a></div>
+              <div class="timeline-period">2023 &mdash; 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
           <div class="timeline-item-header">
             <img class="timeline-logo" src="data/logo/padded_zju.png" alt="Zhejiang University">
             <div class="timeline-info">
               <h3>Zhejiang University</h3>
               <div class="timeline-role">B.Eng. in Automation</div>
-              <div class="timeline-period">Sep. 2020 &mdash; Jul. 2024</div>
+              <div class="timeline-period">2020 &mdash; 2024</div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS ===== -->
+  <section style="border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Awards</h2>
+      </div>
+      <div class="awards-list">
+        <div class="award-item">
+          <span class="award-title">Finalist Award, Mathematical Contest in Modeling <span class="award-detail">(top 2%)</span></span>
+          <span class="award-year">2023</span>
+        </div>
+        <div class="award-item">
+          <span class="award-title">Second-prize Scholarship of Zhejiang University</span>
+          <span class="award-year">2020 &mdash; 2022</span>
         </div>
       </div>
     </div>
@@ -289,10 +456,10 @@
   <!-- ===== MISC ===== -->
   <section style="border-top: 1px solid var(--border); padding-bottom: 40px;">
     <div class="container">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <h2>Misc.</h2>
       </div>
-      <div class="misc-content fade-up">
+      <div class="misc-content">
         I enjoy various kinds of sports, including basketball, fitness, and water sports.
         I was a varsity athlete and the team leader on ZJU's Dragon Boat Team.
         I am also a fan of the <a href="https://www.nba.com/">NBA</a>.
@@ -303,43 +470,24 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Jiahao Shao. Designed with <a href="https://claude.ai/claude-code">Claude Code</a>.</p>
-      <p>Last updated Mar. 2026</p>
-      <div class="globe-container">
-        <script type="text/javascript" id="clstr_globe"
-          src="//clustrmaps.com/globe.js?d=aeAvHz-b79mC7dPRO9kLzIprAAipupSBWJPwByyZKfQ"></script>
-      </div>
+      <p>&copy; 2026 Jiahao Shao. Last updated Mar. 2026.</p>
     </div>
   </footer>
 
-  <!-- ===== SCRIPTS ===== -->
   <script>
-    // Nav scroll effect
     const nav = document.getElementById('nav');
-    const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > 20);
-    };
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // Scroll-triggered animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
+    document.querySelectorAll('.pub-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        document.querySelectorAll('.pub-tab').forEach(b => b.classList.toggle('is-active', b.dataset.tab === tab));
+        document.querySelectorAll('.pub-panel').forEach(p => p.hidden = p.dataset.panel !== tab);
       });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
     });
 
-    document.querySelectorAll('.fade-up, .section-header').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Smooth scroll for nav links
     document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
