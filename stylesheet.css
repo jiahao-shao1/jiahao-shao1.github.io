@@ -1,6 +1,7 @@
 /* ===== VARIABLES ===== */
 /* Sitzmann-inspired palette + Inter (free Messina Sans substitute) + user's Crimson accent */
 :root {
+  color-scheme: light;
   --bg: #FAFAFA;                       /* hsl(0, 0%, 98%) — Sitzmann bg */
   --bg-elevated: #FFFFFF;
   --bg-card: #FFFFFF;
@@ -20,6 +21,28 @@
   --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --transition: 0.2s ease;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0F1115;
+  --bg-elevated: #181B22;
+  --bg-card: #181B22;
+  --text: #E6E8EC;
+  --text-secondary: #A0A6AE;
+  --text-tertiary: #6B7280;
+  --accent: #E04760;
+  --accent-hover: #F26079;
+  --accent-subtle: rgba(224, 71, 96, 0.08);
+  --accent-light: rgba(224, 71, 96, 0.18);
+  --border: #2A2F38;
+  --border-light: rgba(230, 232, 236, 0.08);
+}
+
+/* Tone down monochrome emblem logos in dark mode (HKUST / ZJU). Ant Group's
+   colored mark stays untouched via the file-name selector. */
+:root[data-theme="dark"] img[src*="emblem"] {
+  filter: invert(0.92) hue-rotate(180deg);
 }
 
 /* ===== RESET ===== */
@@ -123,6 +146,34 @@ section {
 .nav-sections a:hover {
   color: var(--accent);
 }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius-full);
+  color: var(--text);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: inline-block; }
 
 .cn-name {
   font-family: 'Zen Old Mincho', 'STSong', 'Songti SC', serif;
