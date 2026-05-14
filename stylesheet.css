@@ -79,7 +79,6 @@ section {
   top: 0;
   z-index: 100;
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
 }
 
 .hero-header > .container {
@@ -90,11 +89,12 @@ section {
   flex-wrap: wrap;
   padding-top: 16px;
   padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-info h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.01em;
   color: var(--text);
@@ -473,19 +473,15 @@ a.paper-title:hover {
 }
 
 .proj-card {
-  padding: 22px 22px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
 }
 
 .proj-card h3 {
   font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 500;
-  margin-bottom: 6px;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 2px;
 }
 
 .proj-card h3 a {
@@ -502,7 +498,7 @@ a.paper-title:hover {
   font-weight: 600;
   padding: 2px 9px;
   border-radius: var(--radius-full);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   width: fit-content;
@@ -519,7 +515,7 @@ a.paper-title:hover {
   font-size: 13.5px;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   flex: 1;
 }
 
